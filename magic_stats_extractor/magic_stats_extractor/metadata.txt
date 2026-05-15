@@ -1,0 +1,10 @@
+[general]
+name=Magic FieldMetrics - UAV
+qgisMinimumVersion=3.0
+description=Extract spectral statistics and coverage from drone orthomosaics (All Bands). / Extrae estadísticas espectrales y cobertura de ortomosaicos (Todas las Bandas).
+version=0.3
+author=José Fernando Menes
+about=EN: **Magic FieldMetrics - UAV** is designed to extract information from orthomosaics in field trials. **Methodology**: The tool analyzes each plot (polygon) from the vector layer, extracting pixel values using the exact geometry. From this data, multiple statistics are extracted from all available bands in the raster image.\n\nAdditionally, it calculates vegetal **Coverage (%)**. Coverage is defined as the proportion of valid pixels (plant) relative to the total pixels within the plot geometry. For this, the raster image used must have the soil masked.\n\n*Powered by GDAL & NumPy.*
+ES: **Magic FieldMetrics - UAV** está diseñado para extraer información de ortomosaicos en ensayos de campo. **Metodología**: La herramienta analiza cada parcela (polígono) de la capa vectorial, extrayendo los valores de los píxeles mediante la geometría exacta. A partir de estos datos, se extraen múltiples estadísticas de todas las bandas disponibles en la imagen raster.\n\nAdemás, calcula la **Cobertura (%)** vegetal. La cobertura se define como la proporción de píxeles válidos (planta) respecto al total de píxeles dentro de la geometría de la parcela. Para ello, la imagen raster utilizada debe tener el suelo enmascarado.\n\n*Powered by GDAL & NumPy.*
+icon=icon.png
+tags=processing, raster, vector, statistics, zonal, dron, crops, plots

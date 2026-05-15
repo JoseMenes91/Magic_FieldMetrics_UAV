@@ -1,0 +1,10 @@
+[general]
+name=Magic FieldMetrics - UAV
+qgisMinimumVersion=3.0
+description=Extrae estadísticas espectrales, volumen y métricas globales de ensayos UAV / Extract advanced spectral, volume & global stats from UAV trials.
+version=1.0
+author=José Fernando Menes
+about=EN: **Magic FieldMetrics - UAV** extracts high-throughput phenotyping data from field trials. Computes standard stats, Coverage (%), Volume Index, Canopy Volume (m³), CV, and global context metrics like Z-Score and Robust Scaler processing orthomosaics and vectors.\n\nES: **Magic FieldMetrics - UAV** extrae datos de fenotipado espacial de ensayos agrícolas. Calcula estadísticas estándar, Cobertura (%), Volumen de Canopeo (m³), CV, y métricas de contexto global (Z-Score, Escalamiento Robusto) procesando ortomosaicos y polígonos.\n\n*Powered by GDAL & NumPy.*
+icon=icon.png
+tags=processing, raster, vector, statistics, zonal, dron, crops, plots, UAV, phenotyping
+repository=https://github.com/tu-usuario/magic_stats_extractor
