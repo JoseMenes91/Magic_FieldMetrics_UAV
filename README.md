@@ -18,14 +18,21 @@ QGIS plugin for agricultural microplot trials. Extracts spatial statistics, cove
 
 ## 📖 Quick Start Guide
 Layer selection: Upon opening the tool, simply select your Raster layer (orthomosaic or height model) and your Vector layer (your microplot polygons).
+
 Metrics selection: You can choose as many statistics and percentiles as you want. The plugin will automatically calculate the values for each polygon and across every raster band.
+
 ⚠️ Special Considerations
 Some metrics require specific raster preparations:
 
 Vegetal Coverage (%): The input raster layer must have the soil masked (bare soil pixels must be set to NoData). The plugin will calculate the proportion of valid (plant) pixels relative to the total polygon area.
+
 Volume Metrics: The input raster must necessarily be a Canopy Height Model (CHM), where the ground level equals 0.
-Canopy Volume ($m^3$): Sums all positive heights and multiplies them by the pixel area ($GSD^2$).
+
+Canopy Volume (m^3): Sums all positive heights and multiplies them by the pixel area.
+
 Volume Index: This is the Canopy Volume divided by the total surface area of the microplot.
+
+
 🌍 Global Trial Metrics
 The Z-Score and Robust Scaler are statistics primarily designed to work with the thermal band.
 
@@ -33,5 +40,6 @@ Unlike the rest of the metrics, the algorithm does not evaluate a plot in isolat
 
 Z-Score: Indicates how many standard deviations a plot is above or below the overall trial average.
 Formula: (Plot Mean - Global Trial Mean) / Global Standard Deviation
+
 Robust Scaler: Fulfills the same function as the Z-Score, but is highly resistant to extreme values (such as hot edges or anomalies).
 Formula: (Plot Mean - Global Trial Median) / Global Interquartile Range
